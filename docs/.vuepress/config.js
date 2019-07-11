@@ -56,6 +56,7 @@ module.exports = {
                     children: [
                         '/server/elasticsearch/',
                         '/server/elasticsearch/ES索引别名',
+                        '/server/elasticsearch/ES集群迁移',
                     ]
                 },
                 {
