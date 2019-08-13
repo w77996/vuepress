@@ -13,13 +13,19 @@ module.exports = {
         lastUpdated: 'Last Updated', // 文档更新时间：每个文件git最后提交的时间
         nav: [
             {text: '首页', link: '/'},
-            {text: 'Java', link: '/java/'},
+            {text: 'Java',
+                link: '/java/',
+                items: [
+                    {text: '项目', link: '/java/project/'}
+                ]
+            },
             {
                 text: '服务器',
                 link: '/server/',
                 items: [
                     {text: 'Elasticsearch', link: '/server/elasticsearch/'},
-                    {text: 'Docker', link: '/server/docker/'}
+                    {text: 'Docker', link: '/server/docker/'},
+                    {text: 'Mysql', link: '/server/mysql/'}
                 ]
             },
             {
@@ -46,7 +52,8 @@ module.exports = {
                 {
                     title: '项目',
                     children: [
-                        '/java/project/hi-straw'
+                        '/java/project/hi-straw',
+                        '/java/project/yunzhijia',
                     ]
                 }
             ],
@@ -62,15 +69,20 @@ module.exports = {
                 {
                     title: 'Docker',
                     children: [
-                        '/server/docker/',
+                        // '/server/docker/',
                         '/server/docker/Docker安装',
                     ]
                 },
                 {
                     title: 'RocketMQ',
                     children: [
-                        '/server/docker/', // 以docs为根目录来查找文件
-                        '/server/docker/Docker安装',
+                        '/server/rocket/', // 以docs为根目录来查找文件
+                    ]
+                },
+                {
+                    title: 'Mysql',
+                    children: [
+                        '/server/mysql/', // 以docs为根目录来查找文件
                     ]
                 }
             ],
