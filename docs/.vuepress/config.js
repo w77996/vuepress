@@ -16,7 +16,8 @@ module.exports = {
             {text: 'Java',
                 link: '/java/',
                 items: [
-                    {text: '项目', link: '/java/project/'}
+                    {text: '项目', link: '/java/project/'},
+                    {text: '问题排查', link: '/java/solve/Arthas检测首页性能'}
                 ]
             },
             {
@@ -43,6 +44,7 @@ module.exports = {
                 {
                     title: '主页',
                     children: [
+                        '/java/',
                         '/server/',
                         '/web/',
                     ]
@@ -54,6 +56,13 @@ module.exports = {
                     children: [
                         '/java/project/hi-straw',
                         '/java/project/yunzhijia',
+                    ]
+                },
+                {
+                    title: '问题排查',
+                    children: [
+                        '/java/solve/Arthas检测首页性能',
+                        '/java/solve/服务器负载过高查询',
                     ]
                 }
             ],
